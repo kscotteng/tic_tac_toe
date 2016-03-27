@@ -1,21 +1,32 @@
 class Board
 
+  def initialize
+    @board = [
+      ["","",""],
+        ["", "", ""],
+      ["","",""],
+        ["", "", ""],
+      ["","",""]
+    ]
+  end
+
+
   def show_board
     puts ""
-      puts "   1   2   3"
-      puts "A" + "    |   |  "
-      vertical_lines
-      puts "B" + "    |   |  "
-      vertical_lines
-      puts "C" + "    |   |  "
-      puts ""
+    puts "      Location Reference Board"
+    puts ""
+    puts "            A1| A2| A3 "
+    horizontal_lines
+    puts "            B1| B2| B3 "
+    horizontal_lines
+    puts "            C1| C2| C3 "
+    puts ""
   end
 
-
-  def vertical_lines
-    puts "  -----------"
+  def horizontal_lines
+    puts "           ---+---+---"
   end
 
-a = Board.new
-a.show_board
+# a = Board.new
+# a.show_board
 end

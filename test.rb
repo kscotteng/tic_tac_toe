@@ -1,6 +1,9 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 
+require './board.rb'
+
+
   def test_new_board
     grid = Board.new
     assert_output(new_board) do
@@ -11,11 +14,11 @@ require 'minitest/pride'
 
   def new_board
 
-  %Q{ 1   2   3
-A     |   |
+   1   2   3
+A    |   |
   -----------
-B      |   |
+B   |   |
   -----------
-C       |   |
-}
+C  |   |
+
   end
