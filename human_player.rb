@@ -1,8 +1,16 @@
-require_relative 'board'
+require './board.rb'
 
-board = Board.new
-board.show_board
+pboard = Board.new
+rboard = Board.new
+
+  puts rboard.reference_board
+  puts pboard.player_board
 
 
-puts "Pick a location for you next move: "
+
 puts ""
+puts "Pick a location for you next move:"
+move = gets.chomp
+# row,col = move.split(',')
+
+rboard.verify_move(move)
